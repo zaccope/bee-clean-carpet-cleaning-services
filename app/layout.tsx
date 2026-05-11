@@ -19,25 +19,25 @@ const body = DM_Sans({
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || 'https://bee-clean-carpet-cleaning-services.vercel.app'
-const PHONE = '07700 900 123'
-const PHONE_TEL = '+447700900123'
+const PHONE = '07885 386 820'
+const PHONE_TEL = '+447885386820'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: 'Bee Clean Carpet Cleaning | Stains Gone, Carpets Like New',
+  title: 'Bee Clean | Carpet, Upholstery & Hard-Floor Cleaning Specialists',
   description:
-    'Bee Clean — professional carpet, rug and upholstery cleaning. Hot-water extraction, pet stain and odour removal, end-of-tenancy cleans. Dry in hours, not days. Free quote: ' +
+    'Bee Clean — Wool Safe approved carpet, multi-floor and upholstery cleaning across Staffordshire, Cheshire, Derbyshire and Shropshire. 500+ five-star reviews. Commercial & residential. Free quote: ' +
     PHONE +
     '.',
   openGraph: {
-    title: 'Bee Clean Carpet Cleaning | Stains Gone, Carpets Like New',
+    title: 'Bee Clean | Carpet, Upholstery & Hard-Floor Cleaning Specialists',
     description:
-      'Carpet, rug and upholstery cleaning. Hot-water extraction, pet stain and odour removal, end-of-tenancy specialists. Dry in hours.',
+      'Wool Safe approved carpet, multi-floor and upholstery cleaning across Staffs, Cheshire, Derbyshire & Shropshire. 500+ five-star Facebook reviews.',
     url: SITE_URL,
     siteName: 'Bee Clean Carpet Cleaning Services',
     locale: 'en_GB',
     type: 'website',
-    images: [`${SITE_URL}/images/LOGO.jpg`],
+    images: [`${SITE_URL}/images/PROMO.jpg`],
   },
   icons: {
     icon: '/images/LOGO.jpg',
@@ -56,18 +56,20 @@ const localBusinessSchema = {
   url: SITE_URL,
   image: `${SITE_URL}/images/LOGO.jpg`,
   priceRange: '££',
-  areaServed: {
-    '@type': 'AdministrativeArea',
-    name: 'United Kingdom',
-  },
+  areaServed: [
+    { '@type': 'AdministrativeArea', name: 'Staffordshire' },
+    { '@type': 'AdministrativeArea', name: 'Cheshire' },
+    { '@type': 'AdministrativeArea', name: 'Derbyshire' },
+    { '@type': 'AdministrativeArea', name: 'Shropshire' },
+  ],
   address: {
     '@type': 'PostalAddress',
     addressCountry: 'GB',
   },
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '38',
+    ratingValue: '5.0',
+    reviewCount: '500',
   },
 }
 
@@ -77,7 +79,7 @@ const servicesSchema = {
   itemListElement: [
     {
       '@type': 'Service',
-      name: 'Carpet deep cleaning',
+      name: 'Wool Safe approved carpet cleaning',
       provider: { '@type': 'LocalBusiness', name: 'Bee Clean Carpet Cleaning Services' },
     },
     {
@@ -87,12 +89,12 @@ const servicesSchema = {
     },
     {
       '@type': 'Service',
-      name: 'Rug cleaning',
+      name: 'Hard floor cleaning (LVT, Karndean, vinyl, tile, stone, safety flooring)',
       provider: { '@type': 'LocalBusiness', name: 'Bee Clean Carpet Cleaning Services' },
     },
     {
       '@type': 'Service',
-      name: 'Pet stain and odour removal',
+      name: 'Stain removal and odour treatment',
       provider: { '@type': 'LocalBusiness', name: 'Bee Clean Carpet Cleaning Services' },
     },
     {
@@ -102,7 +104,7 @@ const servicesSchema = {
     },
     {
       '@type': 'Service',
-      name: 'Commercial carpet cleaning',
+      name: 'Commercial fixed seating and micro bonnet cleaning',
       provider: { '@type': 'LocalBusiness', name: 'Bee Clean Carpet Cleaning Services' },
     },
   ],
@@ -114,6 +116,14 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
+      name: 'What areas does Bee Clean cover?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We cover Staffordshire, Cheshire, Derbyshire and Shropshire for both residential and commercial cleans. Anything further out, call and ask.',
+      },
+    },
+    {
+      '@type': 'Question',
       name: 'How long does it take for carpets to dry?',
       acceptedAnswer: {
         '@type': 'Answer',
@@ -122,26 +132,26 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Will you get pet stains and smells out?',
+      name: 'Are the products safe for wool, kids and pets?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes — we use enzyme treatments that break down urine crystals at the source, then deep-extract. Most pet odours are gone in one visit. Older, soaked-through underlay may need a second pass.',
+        text: 'Yes — we are Wool Safe approved, and every product we use is non-toxic and child-and-pet safe once dry. We can run a fragrance-free clean on request.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Are the products safe for kids and pets?',
+      name: 'Do you clean hard floors as well as carpet?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Every product we use is non-toxic and child-and-pet safe once the carpet is dry. We can also run a fragrance-free clean on request.',
+        text: 'Yes — LVT, Karndean, vinyl, ceramic tile, stone, sealed wood and safety flooring. We deep-clean the grout lines too. Carpet and hard floor in the same visit is no problem.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Do you do end-of-tenancy cleans?',
+      name: 'Do you do commercial work?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes — we give you a dated receipt suitable for landlords, agents and deposit disputes. Book in around your move date and we work around the rest of the clean.',
+        text: 'Yes — fixed seating, chairs, stools, office carpet, dealership showrooms, pubs, restaurants and salons. Evenings and weekends to fit around your trade.',
       },
     },
   ],

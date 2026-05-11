@@ -1,21 +1,21 @@
 const QUOTES = [
   {
     body:
-      "Three-year-old cream carpet, two kids, a beagle and a red-wine accident. Genuinely thought we&rsquo;d be replacing it. Booked Bee Clean on the Friday, dry by lunchtime Saturday, looks brand new. Saved us about £800 in new flooring.",
+      "Three-year-old cream wool carpet, two kids, a beagle and a red-wine accident. Genuinely thought we&rsquo;d be replacing it. Booked Bee Clean on the Friday, dry by lunchtime Saturday, looks brand new. Saved us £800 in new flooring.",
     name: 'Hannah P.',
-    place: 'Repeat customer',
+    place: 'Stafford',
   },
   {
     body:
-      "Used them for an end-of-tenancy clean &mdash; landlord tried to keep half the deposit over the carpets. Receipt and a couple of before/after photos from Bee Clean and we got the lot back. Worth every penny.",
+      "End-of-tenancy clean &mdash; landlord tried to keep half our deposit over the carpets. Receipt and a couple of before/after photos from Bee Clean and we got the lot back. Worth every penny.",
     name: 'Iwan R.',
-    place: 'Move-out clean',
+    place: 'Macclesfield',
   },
   {
     body:
-      "Cleaned my sofa, an armchair and a wool runner the dog had been treating like a bed for years. No smell, no marks, no faff. Tidied up after themselves and were out in under three hours.",
+      "Had the LVT in the kitchen and the corner sofa done in one visit. Floor looks like the day it was laid, sofa smells like a sofa again. In and out in three hours, paid what they quoted.",
     name: 'Marcie L.',
-    place: 'Upholstery + rug',
+    place: 'Buxton',
   },
 ]
 
@@ -33,7 +33,7 @@ export default function Testimonials() {
             </h2>
           </div>
           <span className="hidden rounded-full border border-ink/10 px-3 py-1 text-[11px] uppercase tracking-[0.22em] text-ink/55 md:inline-block">
-            Sample &mdash; real reviews drop in
+            500+ five-star on Facebook
           </span>
         </div>
 

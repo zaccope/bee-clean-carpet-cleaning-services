@@ -1,12 +1,12 @@
 'use client'
 
 import { useState, FormEvent } from 'react'
-import { Phone, ArrowUpRight, Clock } from '@phosphor-icons/react'
+import { Phone, ArrowUpRight, Clock, MapPin } from '@phosphor-icons/react'
 import { trackEvent } from './Analytics'
 
 type Status = 'idle' | 'sending' | 'ok' | 'err'
 
-const PHONE_TEL = '+447700900123'
+const PHONE_TEL = '+447885386820'
 
 export default function Contact() {
   const [status, setStatus] = useState<Status>('idle')
@@ -33,7 +33,7 @@ export default function Contact() {
       const json = await res.json().catch(() => ({}))
       if (!res.ok || json?.ok === false) {
         setStatus('err')
-        setError(json?.error || "Couldn't send. Please call 07700 900 123.")
+        setError(json?.error || "Couldn't send. Please call 07885 386 820.")
         return
       }
       setStatus('ok')
@@ -41,7 +41,7 @@ export default function Contact() {
       form.reset()
     } catch {
       setStatus('err')
-      setError('Network error. Please call 07700 900 123.')
+      setError('Network error. Please call 07885 386 820.')
     }
   }
 
@@ -77,7 +77,7 @@ export default function Contact() {
                 className="shrink-0 translate-y-[0.4rem] text-honey"
               />
               <span className="font-display text-4xl font-medium tracking-tight md:text-5xl">
-                07700 900 123
+                07885 386 820
               </span>
               <ArrowUpRight
                 size={22}
@@ -88,16 +88,16 @@ export default function Contact() {
 
             <div className="mt-10 grid grid-cols-1 gap-5 border-t border-cream/10 pt-8 text-sm md:grid-cols-2">
               <div className="flex items-start gap-3">
-                <Clock size={16} weight="regular" className="mt-1 text-honey" />
+                <MapPin size={16} weight="regular" className="mt-1 text-honey" />
                 <div>
                   <div className="text-[11px] uppercase tracking-[0.22em] text-cream/50">
-                    Hours
+                    Covering
                   </div>
-                  <div className="mt-1 text-cream">Mon&ndash;Sat, 8am&ndash;6pm</div>
+                  <div className="mt-1 text-cream">Staffs, Cheshire, Derbyshire &amp; Shropshire</div>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <span className="mt-1 inline-block h-2 w-2 rounded-full bg-honey animate-tick" />
+                <Clock size={16} weight="regular" className="mt-1 text-honey" />
                 <div>
                   <div className="text-[11px] uppercase tracking-[0.22em] text-cream/50">
                     Reply time
@@ -156,9 +156,9 @@ export default function Contact() {
               </div>
 
               <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-cream/10 pt-6 text-[11px] uppercase tracking-[0.22em] text-cream/55">
+                <span className="flex items-center gap-2"><span className="h-1 w-1 rounded-full bg-honey" /> Wool Safe approved</span>
+                <span className="flex items-center gap-2"><span className="h-1 w-1 rounded-full bg-honey" /> 500+ five-star reviews</span>
                 <span className="flex items-center gap-2"><span className="h-1 w-1 rounded-full bg-honey" /> Fully insured</span>
-                <span className="flex items-center gap-2"><span className="h-1 w-1 rounded-full bg-honey" /> Pet &amp; kid safe</span>
-                <span className="flex items-center gap-2"><span className="h-1 w-1 rounded-full bg-honey" /> No-fuss quotes</span>
               </div>
 
               <div className="mt-6 flex flex-col items-stretch justify-between gap-4 sm:flex-row sm:items-center">

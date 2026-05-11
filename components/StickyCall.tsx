@@ -16,9 +16,9 @@ export default function StickyCall() {
 
   return (
     <a
-      href="tel:+447700900123"
+      href="tel:+447885386820"
       onClick={() => trackEvent('tel_link_click', { location: 'sticky' })}
-      aria-label="Call Bee Clean on 07700 900 123"
+      aria-label="Call Bee Clean on 07885 386 820"
       className={`fixed inset-x-3 bottom-3 z-40 flex items-center justify-between gap-3 rounded-full border border-ink/15 bg-honey pl-4 pr-2 py-2 text-ink shadow-[0_10px_30px_rgba(0,0,0,0.18)] transition-all duration-500 md:hidden ${
         visible ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-4 opacity-0'
       }`}
@@ -32,7 +32,7 @@ export default function StickyCall() {
             Tap to call
           </span>
           <span className="block font-display text-[15px] font-semibold">
-            07700 900 123
+            07885 386 820
           </span>
         </span>
       </span>

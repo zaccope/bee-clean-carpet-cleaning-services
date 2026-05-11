@@ -1,4 +1,4 @@
-import { Phone, Clock } from '@phosphor-icons/react/dist/ssr'
+import { Phone, MapPin } from '@phosphor-icons/react/dist/ssr'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -10,9 +10,9 @@ export default function Footer() {
             Bee <span className="text-honey-deep">Clean</span>
           </div>
           <p className="mt-4 max-w-md text-[14.5px] leading-relaxed text-ink/65">
-            Carpet, rug and upholstery cleaning done properly &mdash; hot-water
-            extraction, pet-stain specialists, end-of-tenancy receipts.
-            Dry in hours.
+            Carpet, multi-floor and upholstery cleaning specialist &mdash; Wool
+            Safe approved, 500+ five-star reviews, commercial and residential
+            across Staffs, Cheshire, Derbyshire and Shropshire.
           </p>
         </div>
 
@@ -23,13 +23,13 @@ export default function Footer() {
           <ul className="mt-4 space-y-3 text-[14.5px] text-ink/80">
             <li className="flex items-center gap-3">
               <Phone size={14} weight="fill" className="text-honey-deep" />
-              <a href="tel:+447700900123" className="hover-underline">
-                07700 900 123
+              <a href="tel:+447885386820" className="hover-underline">
+                07885 386 820
               </a>
             </li>
-            <li className="flex items-center gap-3">
-              <Clock size={14} weight="regular" className="text-ink/55" />
-              <span>Mon&ndash;Sat, 8am&ndash;6pm</span>
+            <li className="flex items-start gap-3">
+              <MapPin size={14} weight="regular" className="mt-1 text-ink/55" />
+              <span>Staffordshire &middot; Cheshire &middot; Derbyshire &middot; Shropshire</span>
             </li>
           </ul>
         </div>
@@ -40,9 +40,9 @@ export default function Footer() {
           </div>
           <ul className="mt-4 space-y-3 text-[14.5px] text-ink/80">
             <li><a href="#services" className="hover-underline">Services</a></li>
+            <li><a href="#gallery" className="hover-underline">Recent work</a></li>
             <li><a href="#process" className="hover-underline">How it works</a></li>
             <li><a href="#about" className="hover-underline">About</a></li>
-            <li><a href="#reviews" className="hover-underline">Reviews</a></li>
             <li><a href="#contact" className="hover-underline">Free quote</a></li>
           </ul>
         </div>

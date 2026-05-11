@@ -5,12 +5,12 @@ import { Phone, ArrowUpRight, List, X } from '@phosphor-icons/react'
 import { trackEvent } from './Analytics'
 import Logo from './Logo'
 
-const PHONE_TEL = '+447700900123'
+const PHONE_TEL = '+447885386820'
 
 const links = [
   { href: '#services', label: 'Services' },
+  { href: '#gallery', label: 'Recent work' },
   { href: '#process', label: 'How it works' },
-  { href: '#about', label: 'About' },
   { href: '#reviews', label: 'Reviews' },
   { href: '#contact', label: 'Free quote' },
 ]
@@ -57,7 +57,7 @@ export default function Nav() {
             className="hidden items-center gap-2 rounded-full border border-ink/15 px-4 py-2 text-sm font-medium text-ink transition-colors hover:border-ink md:inline-flex"
           >
             <Phone size={14} weight="fill" className="text-honey-deep" />
-            07700 900 123
+            07885 386 820
           </a>
           <a
             href="#contact"
@@ -114,7 +114,7 @@ export default function Nav() {
                 className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-honey px-6 py-3 font-medium text-ink active:scale-[0.98]"
               >
                 <Phone size={16} weight="fill" />
-                Call 07700 900 123
+                Call 07885 386 820
               </a>
             </nav>
           </div>
